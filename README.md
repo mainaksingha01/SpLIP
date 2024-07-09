@@ -1,8 +1,9 @@
 # Elevating All Zero-Shot Sketch-Based Image Retrieval Through Multimodal Prompt Learning (ECCV'24)
 
 Official repository of SpLIP, which introduces a novel multimodal prompting learning (MPL) approach in vision-language models for sketch-based image retrieval tasks.
+
 [![arXiv](https://img.shields.io/badge/arXiv-Paper-brightgreen)](https://arxiv.org/pdf/2407.04207)
-[![project](https://img.shields.io/badge/Conference-Paper-blue)](https://mainaksingha01.github.io/SpLIP/)
+[![project](https://img.shields.io/badge/Project-Page-blue)](https://mainaksingha01.github.io/SpLIP/)
 
 ## Abstract
 <img src="https://github.com/mainaksingha01/SpLIP/blob/master/static/images/teaser.png" width="1000">
