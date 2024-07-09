@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <style>
+         td, th {
+         border: 0px solid black;
+         }
+         img{
+         padding: 5px;
+         }
+      </style>
+      <title>Elevating All Zero-Shot Sketch-Based Image Retrieval Through Multimodal Prompt Learning</title>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <!--  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+         <script>
+           window.dataLayer = window.dataLayer || [];
+         
+           function gtag() {
+             dataLayer.push(arguments);
+           }
+         
+           gtag('js', new Date());
+         
+           gtag('config', 'G-PYVRSFMDRL');
+         
+         
+         
+         </script> -->
+      <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+         rel="stylesheet">
+      <link rel="stylesheet" href="./static/css/bulma.min.css">
+      <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+      <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+      <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+      <link rel="stylesheet"
+         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+      <link rel="stylesheet" href="./static/css/index.css">
+      <link rel="icon" href="./static/images/favicon.svg">
+      <link rel="stylesheet" href="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.css">
+      <link rel="stylesheet" href="css/app.css">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <script src="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script defer src="./static/js/fontawesome.all.min.js"></script>
+      <script src="./static/js/bulma-carousel.min.js"></script>
+      <script src="./static/js/bulma-slider.min.js"></script>
+      <script src="./static/js/index.js"></script>
+   </head>
+   <section class="hero">
+      <div class="hero-body">
+         <div class="container is-max-desktop">
+            <div class="columns is-centered">
+               <div class="column has-text-centered">
+                  <div class='nav-brand'> 
+                     <img src='static/images/eccv.png' alt='Aston-Aurrigo' width='1000px' height='600px'> 
+                   </div> 
+                  <h1 class="title is-1 publication-title", style="color:purple;">Elevating All Zero-Shot Sketch-Based Image</h1>
+                  <h1 class="title is-4 publication-title">Retrieval Through Multimodal Prompt Learning</h1>
+                  <div class="is-size-5 publication-authors">
+                     <span class="author-block">
+                     <a href="https://mainaksingha01.github.io/">Mainak Singha</a><sup>1</sup>,</span>
+                     <span class="author-block">
+                     <a href="https://scholar.google.com/citations?user=CNt-vi0AAAAJ&hl=en">Ankit Jha</a><sup>1,2</sup>,</span>
+                     <span class="author-block">
+                     <a href="https://linkedin.com/in/divyam-gupta-425695228/">Divyam Gupta</a><sup>1</sup>,</span>
+                     <span class="author-block">
+                     <a href="https://linkedin.com/in/pranav-singla-171690202/">Pranav Singla</a><sup>1</sup>,</span>
+                     <span class="author-block">
+                     <a href="https://biplab-banerjee.github.io/">Biplab Banerjee</a><sup>1</sup>,</span>
+                     <!-- <span class="author-block">
+			     <br>
+                     <a href="http://personal.ee.surrey.ac.uk/Personal/T.Xiang/index.html">Tao Xiang</a><sup>1,2</sup>,</span>
+                     <span class="author-block">
+                     <a href="http://personal.ee.surrey.ac.uk/Personal/Y.Song/">Yi-Zhe Song</a><sup>1,2</sup></span>	   -->
+                     </span>
+                  </div>
+                  <div class="is-size-5 publication-authors">
+                     <span class="author-block"><sup>1</sup>Indian Institute of Technology Bombay, India</span>
+                     <span class="author-block"><sup>2</sup>INRIA, Grenoble, France</span>
+                  </div>
+                  <!--     <div class="column has-text-centered">
+                     <a href="as">ICLR 2023</a>
+                     </span>
+                     </div> -->
+                  <div class="column has-text-centered">
+                     <div class="publication-links">
+                        <!-- PDF Link. -->
+                        <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2407.04207"
+                           class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                        </a>
+                        </span>
+                        <span class="link-block">
+                        <a href="https://arxiv.org/abs/2407.04207"
+                           class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                        </span>
+                        <span>arXiv</span>
+                        </a>
+                        </span>
+                        <!-- Video Link.
+                        <span class="link-block">
+                        <a href="https://www.youtube.com/watch?v=ImcQFsS1SfE"
+                           class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                        <i class="fab fa-youtube"></i>
+                        </span>
+                        <span>Video</span>
+                        </a>
+                        </span> -->
+                        <!-- Code Link. -->
+                        <span class="link-block">
+                        <a href="https://github.com/mainaksingha01/SpLIP"
+                           class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                        <i class="fab fa-github"></i>
+                        </span>
+                        <span>Code</span>
+                        </a>
+                        </span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="hero teaser">
+      <div class="container is-max-desktop">
+         <div class="hero-body">
+            <img class="round" style="width:1500px" src="./static/images/teaser.png"/>
+            <h2 class="subtitle has-text-centered">
+               <span class="dnerf"></span>(a, b) The difference between the existing multi-modal prompt learn- ing (MPL) vs ours. (c, d) Proposed conditional cross-modal jigsaw vs the literature.</h2>
+         </div>
+      </div>
+   </section>
+   <section class="section">
+   <div class="container is-max-desktop">
+   <!-- Abstract. -->
+   <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+         <h2 class="title is-3">Abstract</h2>
+         <div class="content has-text-justified">
+            We address the challenges inherent in sketch-based image retrieval (SBIR) across various settings, including zero-shot SBIR, generalized zero-shot SBIR, and fine-grained zero-shot SBIR, by leveraging the vision-language foundation model CLIP. While recent endeavors have employed CLIP to enhance SBIR, these approaches predominantly follow uni-modal prompt processing and overlook to exploit CLIP's integrated visual and textual capabilities fully. To bridge this gap, we introduce SpLIP, a novel multi-modal prompt learning scheme designed to operate effectively with frozen CLIP backbones. We diverge from existing multi-modal prompting methods that treat visual and textual prompts independently or integrate them in a limited fashion, leading to suboptimal generalization. SpLIP implements a bi-directional prompt-sharing strategy that enables mutual knowledge exchange between CLIP's visual and textual encoders, fostering a more cohesive and synergistic prompt processing mechanism that significantly reduces the semantic gap between the sketch and photo embeddings. In addition to pioneering multi-modal prompt learning, we propose two innovative strategies for further refining the embedding space. The first is an adaptive margin generation for the sketch-photo triplet loss, regulated by CLIP's class textual embeddings. The second introduces a novel task, termed conditional cross-modal jigsaw, aimed at enhancing fine-grained sketch-photo alignment by implicitly modeling sketches' viable patch arrangement using knowledge of unshuffled photos. Our comprehensive experimental evaluations across multiple benchmarks demonstrate the superior performance of SpLIP in all three SBIR scenarios.
+            </p>
+         </div>
+      </div>
+   </div> 
+   <section class="section">
+      <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+         <div class="column is-four-fifths">
+            <h2 class="title is-3">Architecture</h2>
+            <div class="content has-text-justified">
+               </h2>
+               <center>
+                  <img src="./static/images/architecture.png" alt="" border=0 height=300 width=650></img></
+               </center>
+               <h2 class="subtitle has-text-centered">
+                  The model architecture for SpLIP.
+			      </h2
+               &nbsp; 
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="hero">
+   <div class="hero-body">
+   <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+         <div class="column is-four-fifths">
+            <h2 class="title is-3">Results</h2>
+            <div class="content has-text-justified">
+               <center>
+                  <img src="static/images/categorical.png" alt="qualitative results" border=0 height=200 width=1500/>
+               </center>
+               <h2 class="subtitle has-text-centered">
+                  Quantitative comparison for the Categorical ZS-SBIR.
+			   <br>
+			   <br>			
+               <center>
+                  <img src="static/images/generalized.png" alt="qualitative results" border=0 height=200 width=600/>
+               </center>
+               <h2 class="subtitle has-text-justified">
+                  Quantitative comparison for the Generalized ZS-SBIR.
+            <br>
+	         <br>
+		         <center>
+                  <img src="static/images/finegrained.png" alt="quantitative results" border=0 height=200 width=1500/>
+               </center>
+               <h2 class="subtitle has-text-justified">
+                  Quantitative comparison for the Fine-Grained ZS-SBIR on the Sketchy dataset.
+            <br>
+            <br>
+		         <center>
+                  <img src="static/images/querycategorical.png" alt="quantitative results" border=0 height=200 width=1500/>
+               </center>
+               <h2 class="subtitle has-text-justified">
+                  Qualitative comparisons between the baseline and SpLIP for Categorical ZS-SBIR.
+            <br>	
+            <br>
+		         <center>
+                  <img src="static/images/queryfine.png" alt="quantitative results" border=0 height=200 width=1500/>
+               </center>
+               <h2 class="subtitle has-text-justified">
+                  Qualitative comparisons with retrieved photos for sketch query instances for FG-ZS-SBIR.
+            <br>		
+            </div>
+         </div>
+      </div>
+   </div>
+   <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+         <h2 class="title">BibTeX</h2>
+         <pre><code></code></pre>
+      </div>
+   </section>
+   <script>
+      const viewers = document.querySelectorAll(".image-compare");
+      viewers.forEach((element) => {
+          let view = new ImageCompare(element, {
+              hoverStart: true,
+              addCircle: true
+          }).mount();
+      });
+      
+      $(document).ready(function () {
+          var editor = CodeMirror.fromTextArea(document.getElementById("bibtex"), {
+              lineNumbers: false,
+              lineWrapping: true,
+              readOnly: true
+          });
+          $(function () {
+              $('[data-toggle="tooltip"]').tooltip()
+          })
+      });
+   </script>
+   <br>
+   <p style="text-align:center"> Copyright: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> CC BY-NC-SA 4.0</a> © Mainak Singha | Last updated: 09 Jul 2024 |Template Credit: <a href="https://nerfies.github.io/"> Nerfies</a></p>
+   </body>
+</html>
