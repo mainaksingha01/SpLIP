@@ -2,8 +2,10 @@
 
 Official repository of SpLIP, which introduces a novel multimodal prompting learning (MPL) approach in vision-language models for sketch-based image retrieval tasks.
 
+[![paper](https://img.shields.io/badge/Conference-Paper-blue)](https://link.springer.com/chapter/10.1007/978-3-031-72691-0_1)
 [![arXiv](https://img.shields.io/badge/arXiv-Paper-brightgreen)](https://arxiv.org/pdf/2407.04207)
 [![project](https://img.shields.io/badge/Project-Page-darkred)](https://mainaksingha01.github.io/SpLIP/)
+[![poster](https://img.shields.io/badge/Poster-yellow)](https://github.com/mainaksingha01/SpLIP/blob/master/docs/SpLIP_poster.pdf)
 
 ## Abstract
 <img src="https://github.com/mainaksingha01/SpLIP/blob/master/static/images/teaser.png" width="1000">
